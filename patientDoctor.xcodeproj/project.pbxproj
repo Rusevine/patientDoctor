@@ -11,6 +11,7 @@
 		4611C17821137AD3005EC3E3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4611C17721137AD3005EC3E3 /* Person.m */; };
 		4611C17B21137AF6005EC3E3 /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4611C17A21137AF6005EC3E3 /* Doctor.m */; };
 		4611C17E21137B1E005EC3E3 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4611C17D21137B1E005EC3E3 /* Patient.m */; };
+		46E963E72113A209001E3DA3 /* Prescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 46E963E62113A209001E3DA3 /* Prescription.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		4611C17A21137AF6005EC3E3 /* Doctor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
 		4611C17C21137B1E005EC3E3 /* Patient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
 		4611C17D21137B1E005EC3E3 /* Patient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+		46E963E52113A209001E3DA3 /* Prescription.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prescription.h; sourceTree = "<group>"; };
+		46E963E62113A209001E3DA3 /* Prescription.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Prescription.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				4611C16F21137A3A005EC3E3 /* main.m */,
+				46E963E52113A209001E3DA3 /* Prescription.h */,
+				46E963E62113A209001E3DA3 /* Prescription.m */,
 				4611C17621137AD3005EC3E3 /* Person.h */,
 				4611C17721137AD3005EC3E3 /* Person.m */,
 				4611C17921137AF6005EC3E3 /* Doctor.h */,
@@ -137,6 +142,7 @@
 				4611C17E21137B1E005EC3E3 /* Patient.m in Sources */,
 				4611C17021137A3A005EC3E3 /* main.m in Sources */,
 				4611C17B21137AF6005EC3E3 /* Doctor.m in Sources */,
+				46E963E72113A209001E3DA3 /* Prescription.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

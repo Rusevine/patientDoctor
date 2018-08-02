@@ -8,6 +8,7 @@
 
 #import "Patient.h"
 
+
 @implementation Patient
 
 - (instancetype)initWithName:(NSString *)name andAge:(NSInteger)age andHealthCard:(BOOL)healthCard{
@@ -16,7 +17,12 @@
         self.name = name;
         _age = age;
         _hasHealthCard = healthCard;
+        _prescriptionHistory = [[NSMutableArray alloc] init];
     }
     return self;
+}
+
+-(void)visitDoctor:(Doctor*)doctor {
+    _doctor = doctor;
 }
 @end

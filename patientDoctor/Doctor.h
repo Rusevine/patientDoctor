@@ -7,7 +7,8 @@
 //
 
 #import "Person.h"
-#import "Patient.h"
+@class Patient;
+@class Prescription;
 
 @interface Doctor : Person
 
@@ -15,5 +16,8 @@
 @property (nonatomic) NSMutableArray<Patient *> *patients;
 
 -(instancetype) initWithName:(NSString *)name andSpecialization:(NSString *)specialization;
+-(void)checkHealthCardandPatient:(BOOL)hasHealthCard andPatient:(Patient *)patient;
+-(BOOL)requestMedication:(Patient*)patient;
+
 
 @end
