@@ -7,8 +7,9 @@
 //
 
 #import "Person.h"
+#import "Prescription.h"
 @class Patient;
-@class Prescription;
+
 
 @interface Doctor : Person
 
@@ -17,7 +18,7 @@
 
 -(instancetype) initWithName:(NSString *)name andSpecialization:(NSString *)specialization;
 -(void)checkHealthCardandPatient:(BOOL)hasHealthCard andPatient:(Patient *)patient;
--(BOOL)requestMedication:(Patient*)patient;
+-(Prescription *)requestMedication:(Patient*)patient;
 
 
 @end

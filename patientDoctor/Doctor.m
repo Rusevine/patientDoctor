@@ -27,11 +27,20 @@
     }
 }
 
--(BOOL)requestMedication:(Patient*)patient{
+-(Prescription *)requestMedication:(Patient*)patient{
     if([self.patients containsObject:patient]){
-        return YES;
+        char inputChar[255];
+        NSLog(@"Enter your symptom: ");
+        fgets(inputChar, 255, stdin);
+        
+        NSString *symptom = [[NSString alloc] initWithCString:inputChar encoding:NSUTF8StringEncoding];
+        symptom = [symptom stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        Prescription *prescription = [[Prescription alloc] initWithSymptom:symptom doctor:self];
+        
+        return prescription;
     } else {
-        return NO;
+        NSLog(@"I'm not your doctor");
+        return nil;
     }
 }
 
